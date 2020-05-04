@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Background-color: #1A1A36;
+    --text-color: #FFFFFF;
+    --font-size-title: 40px;
+    --font-size-medium: 18px;
+    --font-size-paragraph: 12px;
+    --font-weight-title: 900;
+    --font-weight-medium: 400;
+    --font-weight-paragraph: 400;
+}
+
+
+/* ---- r o o t */
+
+body {
+    color: var(--text-color);
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: var(--font-weight-title);
+    font-size: var(--font-size-title);
+    line-height: 42px;
+    font-size: 42px;
+    font-weight: 900;
+    /* text-transform: capitalize; */
+    /* ------ */
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.medium {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-medium);
+}
+
+.paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: var(--font-weight-paragraph);
+    font-size: var(--font-size-paragraph);
+    line-height: 16px;
+    word-wrap: break-word;
+    /* ------ */
+    padding-top: 12px;
+    padding-bottom: 12px;
+    /* background: blue; */
+}
+
+.display-center-vert {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.display-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ---- main */
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--Background-color);
+    padding-bottom: 80px;
+}
+
+.main-top-img {
+    width: 100%;
+    height: 100vw;
+    /* height: 440px; */
+    height: 50vh;
+    background: url(../img/Harry-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+}
+
+.main-rectangle {
+    width: 67px;
+    height: 2px;
+    background: #C4C4C4;
+    margin-right: 24px;
+}
+
+.main-container {
+    padding: 24px;
+    /* background: red; */
+    height: 100%;
+    margin: auto;
+}
+
+
+/* -------nav--------------- */
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: red; */
+    width: 100%;
+    height: 80px;
+    background: var(--Background-color);
+    /* ------- */
+    padding-right: 24px;
+    padding-left: 24px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* ---------------------- */
+
+@media (min-width:480px) {}
+
+@media (min-width:512px) {
+    .main-container {
+        width: 500px;
+    }
+}
