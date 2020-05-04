@@ -20,6 +20,7 @@
 
 body {
     color: var(--text-color);
+    background-color: var(--Background-color);
 }
 
 .upper {
@@ -78,7 +79,6 @@ body {
 .main {
     width: 100%;
     min-height: 100vh;
-    background-color: var(--Background-color);
     padding-bottom: 80px;
 }
 
@@ -92,6 +92,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: content-box;
+    margin-bottom: 48px;
 }
 
 .main-rectangle {
@@ -103,7 +104,7 @@ body {
 
 .main-container {
     padding: 24px;
-    /* background: red; */
+    /* background: yellow; */
     height: 100%;
     margin: auto;
 }
@@ -136,5 +137,8 @@ body {
     .main-container {
         width: 500px;
     }
+    .nav-container {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
 }
-

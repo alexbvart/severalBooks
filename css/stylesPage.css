@@ -1,97 +1,49 @@
-*{
-    
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
+.categories {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
-:root{
-    --Background-color:#1A1A36;
-    --text-color:#FFFFFF;
-    
-    --font-size-title:40px;
-    --font-size-medium:18px;
-    --font-size-paragraph:12px;
 
-    --font-weight-title:900;
-    --font-weight-medium:400;
-    --font-weight-paragraph:400;
-    
-}
-.main{
+.main-books {
     width: 100%;
-    min-height: 50vh;
-    background-color: var(--Background-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.main-top-img{
-    width: 100%;
-    min-height: 50vh;
-    background: url(../img/Harry-img.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-clip: content-box;
-
-}
-.main-contenedor{
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.rectangle{
-    width: 67px;
-    height: 2px;
-    background: #C4C4C4;
-}
-.box{
-    width: 100%;
-    max-width: 1131px;
-    display: flex;
-    align-items: center;
-   
-}
-.top-text{
-    font-family:'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-    margin-left: 35px;
-    color: var(--text-color);
-}
-.main-books{
-    width: 100%;
-    height: 40vh;
-    max-width: 1131px;
-    max-height: 400px;
-    min-height: 250px;
-    margin-top: 50px;
-    outline: 1px solid red;
+    height: 276px;
     padding: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.box-books{
-    background: rebeccapurple;
+
+.box-books {
     width: 100%;
+    height: 240px;
     white-space: nowrap;
-    overflow-y: hidden; 
-    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
 }
-.book-item{
-        
-    width: 153px;
-    height: 200px;
-    background-color: red;
+
+.book-item {
+    width: 160px;
+    height: 240px;
     border-radius: 4px;
     margin-right: 24px;
     display: inline-block;
-
-
 }
 
+.book-item img {
+    width: 100%;
+    height: 200px;
+}
+
+.book-item span {
+    width: 100%;
+    height: 40px;
+    /* display: block; */
+}
+
+@media (max-width:512px) {
+    .categories {
+        width: calc(100% - 48px);
+    }
+}
