@@ -1,0 +1,185 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Background-color:#1A1A36;
+    --text-color:#FFFFFF;
+    
+    --font-size-title:40px;
+    --font-size-medium:18px;
+    --font-size-paragraph:12px;
+
+    --font-weight-title:900;
+    --font-weight-medium:400;
+    --font-weight-paragraph:400;
+    
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--Background-color);
+}
+.main-top-img{
+    position: absolute;
+    width: 100%;
+    height: 100vw;
+    min-height: 440px;
+    max-height: 512px ;
+    left: 0px;
+    top: 0px;
+    background: url(../img/Harry-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+
+}
+.main-rectangle{
+    position: absolute;
+    width: 67px;
+    height: 2px;
+    left: 24px;
+    top: 470px;
+
+    background: #C4C4C4;
+}
+.main-top-text{
+    position: absolute;
+    width: 64px;
+    height: 16px;
+    left: 113px;
+    top: 462px;
+
+    
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: var(--text-color);
+}
+.main-title{
+    /* Harry Potter */
+
+    position: absolute;
+    width: 224px;
+    height: 47px;
+    left: 24px;
+    top: 478px;
+
+    /* titlle */
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: var(--font-weight-title);
+    font-size: var(--font-size-title);
+    line-height: 47px;
+    text-transform: capitalize;
+    /* identical to box height */
+
+    color: var(--text-color);
+
+
+}
+.main-paragraph{
+    /* Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para siempre. */
+        position: absolute;
+        width: 85%;
+        max-width: 327px;
+        height: 99px;
+        left: 24px;
+        top: 531px;
+
+        /* PLANE-BOOCK */
+        font-family:'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: var(--font-size-paragraph);
+        line-height: 16px;
+        word-wrap: break-word;
+
+        color: #FFFFFF;
+        
+
+
+}
+.main-box{
+    /* Rectangle 10 */
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /* bg-darl-book */
+    background: transparent;
+
+}
+.box-title{
+    /* books */
+
+    position: absolute;
+    left: 7.47%;
+    right: 57.87%;
+    bottom: 58.75%;
+
+    /* title */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: var(--font-weight-title);
+    font-size: var(--font-size-title);
+    line-height: 47px;
+    text-transform: capitalize;
+
+    color: var(--text-color);
+
+
+}
+@media (min-width:440px){
+    .main-rectangle{
+        top: 500px;
+    }
+    .main-top-text{
+        top: 492px;
+    }
+    .main-title{
+        top: 508px;
+    }
+    .main-paragraph{
+        top: 561px;
+    }
+}
+@media (min-width:480px){
+    .main-rectangle{
+        top: 520px;
+    }
+    .main-top-text{
+        top: 512px;
+    }
+    .main-title{
+        top: 528px;
+    }
+    .main-paragraph{
+        top: 581px;
+    }
+}
+@media (min-width:512px){
+    .main-rectangle{
+        top: 538px;
+    }
+    .main-top-text{
+        top: 530px;
+    }
+    .main-title{
+        top: 546px;
+    }
+    .main-paragraph{
+        top: 599px;
+    }
+}
+
+
